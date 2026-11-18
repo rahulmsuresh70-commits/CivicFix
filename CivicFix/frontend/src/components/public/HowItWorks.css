@@ -1,0 +1,980 @@
+
+/* =========================================
+   HOW IT WORKS PAGE
+========================================= */
+
+.hiw-page {
+  width: 100%;
+  overflow: hidden;
+  color: #172b4d;
+  background: #ffffff;
+}
+
+.hiw-page * {
+  box-sizing: border-box;
+}
+
+.hiw-container {
+  width: min(1160px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.hiw-page h1,
+.hiw-page h2,
+.hiw-page h3,
+.hiw-page h4,
+.hiw-page p {
+  margin-top: 0;
+}
+
+.hiw-page h1,
+.hiw-page h2,
+.hiw-page h3,
+.hiw-page h4 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.hiw-page p {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.hiw-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #435cf5;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.hiw-eyebrow-line {
+  width: 24px;
+  height: 2px;
+  background: #435cf5;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.hiw-primary-button,
+.hiw-secondary-button {
+  min-height: 49px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 21px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.hiw-primary-button {
+  color: #ffffff;
+  background: #435cf5;
+  box-shadow: 0 7px 18px rgba(67, 92, 245, 0.18);
+}
+
+.hiw-primary-button:hover {
+  color: #ffffff;
+  background: #3048db;
+  transform: translateY(-2px);
+}
+
+.hiw-secondary-button {
+  color: #263b5c;
+  background: #ffffff;
+  border: 1px solid #dce3f0;
+}
+
+.hiw-secondary-button:hover {
+  color: #435cf5;
+  border-color: #435cf5;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hiw-hero {
+  padding: 100px 0 95px;
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(67, 92, 245, 0.10),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #f7f9ff,
+      #ffffff 65%
+    );
+}
+
+.hiw-hero .hiw-container {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.hiw-hero-content h1 {
+  max-width: 620px;
+  margin: 24px 0;
+  color: #172b4d;
+  font-size: clamp(40px, 5vw, 58px);
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -2px;
+}
+
+.hiw-hero-content h1 span {
+  color: #435cf5;
+}
+
+.hiw-hero-content > p {
+  max-width: 570px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.hiw-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+.hiw-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.hiw-hero-trust div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #65748b;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hiw-hero-trust svg {
+  color: #435cf5;
+}
+
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.hiw-hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 440px;
+}
+
+.hiw-flow-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e8edfa;
+  border-radius: 20px;
+  box-shadow: 0 25px 65px rgba(37, 55, 105, 0.10);
+}
+
+.hiw-flow-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.hiw-flow-label {
+  color: #8b98ae;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.hiw-flow-card-header h3 {
+  margin: 7px 0 0;
+  color: #172b4d;
+  font-size: 22px;
+}
+
+.hiw-flow-header-icon {
+  width: 47px;
+  height: 47px;
+  display: grid;
+  place-items: center;
+  color: #435cf5;
+  background: #edf0ff;
+  border-radius: 13px;
+}
+
+.hiw-flow-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.hiw-flow-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.hiw-flow-icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+}
+
+.hiw-flow-item.completed .hiw-flow-icon {
+  color: #149a72;
+  background: #e7f8f1;
+}
+
+.hiw-flow-item.active .hiw-flow-icon {
+  color: #435cf5;
+  background: #edf0ff;
+}
+
+.hiw-flow-item.pending .hiw-flow-icon {
+  color: #9aa6b8;
+  background: #f1f3f7;
+}
+
+.hiw-flow-item > div:nth-child(2) {
+  min-width: 0;
+  flex: 1;
+}
+
+.hiw-flow-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #263b5c;
+  font-size: 13px;
+}
+
+.hiw-flow-item span:not(.hiw-flow-check):not(.hiw-flow-active-dot) {
+  display: block;
+  color: #8996aa;
+  font-size: 11px;
+}
+
+.hiw-flow-check {
+  color: #149a72;
+}
+
+.hiw-flow-active-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #435cf5;
+  box-shadow: 0 0 0 5px #edf0ff;
+}
+
+.hiw-flow-connector {
+  width: 2px;
+  height: 23px;
+  margin: 2px 0 2px 19px;
+  background: #e1e7f1;
+}
+
+.hiw-flow-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 26px;
+  padding: 14px;
+  color: #53647e;
+  background: #f6f8ff;
+  border-radius: 10px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.hiw-flow-footer svg {
+  flex-shrink: 0;
+  color: #435cf5;
+}
+
+.hiw-floating-badge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 13px 17px;
+  color: #344665;
+  background: #ffffff;
+  border: 1px solid #edf0f8;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(37, 55, 105, 0.10);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.hiw-floating-badge svg {
+  color: #435cf5;
+}
+
+.hiw-floating-top {
+  top: 20px;
+  right: -15px;
+}
+
+.hiw-floating-bottom {
+  bottom: 20px;
+  left: -15px;
+}
+
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.hiw-section-heading {
+  max-width: 720px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.hiw-section-heading h2 {
+  margin: 17px 0;
+  color: #172b4d;
+  font-size: clamp(29px, 4vw, 40px);
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.hiw-section-heading h2 span {
+  color: #435cf5;
+}
+
+.hiw-section-heading > p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.hiw-intro {
+  padding: 90px 0;
+}
+
+.hiw-intro-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 23px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #f7f9ff;
+  border: 1px solid #e9edf8;
+  border-radius: 16px;
+}
+
+.hiw-intro-icon {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+  display: grid;
+  place-items: center;
+  color: #435cf5;
+  background: #e9edff;
+  border-radius: 15px;
+}
+
+.hiw-intro-highlight h3 {
+  margin-bottom: 10px;
+  color: #172b4d;
+  font-size: 20px;
+}
+
+.hiw-intro-highlight p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   CITIZEN STEPS
+========================================= */
+
+.hiw-steps-section {
+  padding: 95px 0;
+  background: #f7f9ff;
+}
+
+.hiw-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.hiw-step-card {
+  position: relative;
+  min-width: 0;
+  padding: 29px 25px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 16px;
+  transition: 0.25s ease;
+}
+
+.hiw-step-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(37, 55, 105, 0.08);
+}
+
+.hiw-step-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.hiw-step-number {
+  color: #c5cde0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.hiw-step-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  color: #435cf5;
+  background: #edf0ff;
+  border-radius: 14px;
+}
+
+.hiw-step-card h3 {
+  margin-bottom: 12px;
+  color: #172b4d;
+  font-size: 17px;
+}
+
+.hiw-step-card p {
+  min-height: 105px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.hiw-step-tag {
+  display: inline-flex;
+  padding: 7px 11px;
+  color: #435cf5;
+  background: #edf0ff;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.hiw-step-arrow {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  color: #435cf5;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(37, 55, 105, 0.08);
+}
+
+.hiw-steps-action {
+  margin-top: 38px;
+  text-align: center;
+}
+
+
+/* =========================================
+   STATUS TIMELINE
+========================================= */
+
+.hiw-status-section {
+  padding: 100px 0;
+}
+
+.hiw-status-timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.hiw-status-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 17px;
+  padding: 25px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 14px;
+}
+
+.hiw-status-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+}
+
+.hiw-status-icon.blue {
+  color: #435cf5;
+  background: #edf0ff;
+}
+
+.hiw-status-icon.purple {
+  color: #8654dc;
+  background: #f3edff;
+}
+
+.hiw-status-icon.green {
+  color: #159b74;
+  background: #e7f8f1;
+}
+
+.hiw-status-icon.orange {
+  color: #d88925;
+  background: #fff4e5;
+}
+
+.hiw-status-content {
+  min-width: 0;
+}
+
+.hiw-status-number {
+  display: block;
+  margin-bottom: 7px;
+  color: #8996aa;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hiw-status-content h3 {
+  margin-bottom: 8px;
+  color: #172b4d;
+  font-size: 16px;
+}
+
+.hiw-status-content p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+
+/* =========================================
+   ADDITIONAL STATUS
+========================================= */
+
+.hiw-additional-statuses {
+  margin-top: 35px;
+  padding: 28px;
+  background: #f7f9ff;
+  border: 1px solid #e9edf8;
+  border-radius: 15px;
+}
+
+.hiw-additional-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.hiw-additional-heading svg {
+  color: #435cf5;
+}
+
+.hiw-additional-heading h3 {
+  margin: 0;
+  color: #172b4d;
+  font-size: 17px;
+}
+
+.hiw-additional-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.hiw-additional-grid article {
+  padding: 18px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 11px;
+}
+
+.hiw-additional-grid h4 {
+  margin-bottom: 8px;
+  color: #344665;
+  font-size: 13px;
+}
+
+.hiw-additional-grid p {
+  margin-bottom: 0;
+  font-size: 11px;
+}
+
+.hiw-status-note {
+  margin: 22px 0 0;
+  font-size: 11px;
+}
+
+
+/* =========================================
+   ROLES
+========================================= */
+
+.hiw-roles-section {
+  padding: 95px 0;
+  background: #f7f9ff;
+}
+
+.hiw-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.hiw-role-card {
+  padding: 32px 26px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 15px;
+  transition: 0.25s ease;
+}
+
+.hiw-role-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(37, 55, 105, 0.08);
+}
+
+.hiw-role-icon {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  color: #435cf5;
+  background: #edf0ff;
+  border-radius: 15px;
+}
+
+.hiw-role-card h3 {
+  margin-bottom: 12px;
+  color: #172b4d;
+  font-size: 18px;
+}
+
+.hiw-role-card p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+
+/* =========================================
+   SENIOR CITIZEN ASSISTANCE
+========================================= */
+
+.hiw-assistance-section {
+  padding: 90px 0;
+}
+
+.hiw-assistance-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 42px;
+  background: linear-gradient(120deg, #f4f6ff, #fafbff);
+  border: 1px solid #e8edfa;
+  border-radius: 19px;
+}
+
+.hiw-assistance-icon {
+  width: 70px;
+  height: 70px;
+  flex: 0 0 70px;
+  display: grid;
+  place-items: center;
+  color: #435cf5;
+  background: #e9edff;
+  border-radius: 18px;
+}
+
+.hiw-assistance-content {
+  max-width: 750px;
+}
+
+.hiw-assistance-content h2 {
+  margin: 13px 0;
+  color: #172b4d;
+  font-size: 29px;
+}
+
+.hiw-assistance-content > p {
+  margin-bottom: 23px;
+  font-size: 14px;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.hiw-cta {
+  padding: 85px 0;
+  color: #ffffff;
+  background: linear-gradient(120deg, #344bdc, #596ff7);
+}
+
+.hiw-cta-content {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+}
+
+.hiw-cta-eyebrow {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.hiw-cta-content h2 {
+  margin: 17px 0;
+  color: #ffffff;
+  font-size: clamp(29px, 4vw, 40px);
+  font-weight: 800;
+}
+
+.hiw-cta-content > p {
+  max-width: 650px;
+  margin: 0 auto 28px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+}
+
+.hiw-cta-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.hiw-cta-button {
+  min-height: 49px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 22px;
+  color: #435cf5;
+  background: #ffffff;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.hiw-cta-button:hover {
+  color: #3048db;
+  transform: translateY(-2px);
+}
+
+.hiw-cta-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.hiw-cta-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+  .hiw-hero .hiw-container {
+    gap: 35px;
+  }
+
+  .hiw-step-card p {
+    min-height: 125px;
+  }
+
+  .hiw-additional-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hiw-container {
+    width: min(100% - 36px, 600px);
+  }
+
+  .hiw-hero {
+    padding: 70px 0;
+  }
+
+  .hiw-hero .hiw-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hiw-hero-content h1 {
+    font-size: 41px;
+  }
+
+  .hiw-hero-visual {
+    min-height: 390px;
+  }
+
+  .hiw-intro,
+  .hiw-status-section,
+  .hiw-assistance-section {
+    padding: 70px 0;
+  }
+
+  .hiw-steps-section,
+  .hiw-roles-section {
+    padding: 75px 0;
+  }
+
+  .hiw-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hiw-step-card p {
+    min-height: auto;
+  }
+
+  .hiw-step-arrow {
+    display: none;
+  }
+
+  .hiw-status-timeline {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hiw-roles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hiw-floating-top {
+    right: -5px;
+  }
+
+  .hiw-floating-bottom {
+    left: -5px;
+  }
+}
+
+@media (max-width: 520px) {
+  .hiw-hero-content h1 {
+    font-size: 35px;
+    letter-spacing: -1px;
+  }
+
+  .hiw-hero-actions {
+    flex-direction: column;
+  }
+
+  .hiw-hero-actions .hiw-primary-button,
+  .hiw-hero-actions .hiw-secondary-button {
+    width: 100%;
+  }
+
+  .hiw-hero-trust {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hiw-flow-card {
+    padding: 23px 19px;
+  }
+
+  .hiw-floating-badge {
+    padding: 10px 12px;
+    font-size: 9px;
+  }
+
+  .hiw-intro-highlight {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .hiw-steps-grid,
+  .hiw-status-timeline,
+  .hiw-additional-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hiw-section-heading {
+    margin-bottom: 35px;
+  }
+
+  .hiw-assistance-card {
+    flex-direction: column;
+    padding: 28px;
+  }
+
+  .hiw-assistance-content h2 {
+    font-size: 25px;
+  }
+
+  .hiw-assistance-content .hiw-primary-button {
+    width: 100%;
+  }
+
+  .hiw-cta {
+    padding: 65px 0;
+  }
+
+  .hiw-cta-actions {
+    flex-direction: column;
+  }
+
+  .hiw-cta-button {
+    width: 100%;
+  }
+}
